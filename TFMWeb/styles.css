@@ -1,5 +1,5 @@
 :root{
-    --line: ##A3A3A3;
+    --line: #a3a3a3;
     --line-clear: #c5c5c5;
     --left-panel: 300px;
     --background: azure;
@@ -72,4 +72,74 @@ body{
     text-transform: uppercase;
     color: var(--diminshed);
     margin: 0 0 4px;
+}
+
+/** Partes Principales **/
+
+.content-frame{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.view-frame{
+    display: block;
+    padding: 28px 28px 64px;
+    max-width: 1180px;
+}
+
+/** Partes de tabla **/
+
+.table-title{
+    border: 1px solid var(--line);
+    border-radius:  2px;
+    background: var(--background);
+    padding: 14px 16px;
+    max-width: 640px;
+    margin-bottom: 28px;
+    font-weight: 600;
+}
+
+.table-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    max-width: 940px;
+}
+
+.table-label{
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+    color: var(--diminshed);
+    margin: 0 0 4px;
+}
+
+.table-cell{
+    border: 1px solid var(--line-clear);
+    border-radius: 2px;
+    background: var(--background-alt);
+    padding: 12px 14px;
+    font-size: 13px;
+}
+
+.table-sol{
+    font: inherit;
+    font-size: 13px;
+    text-align: left;
+    width: 100%;
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    background: rgb(243, 253, 255);
+    padding: 12px 14px;
+}
+
+.go{
+    display:block;
+    font-size:11px;
+    color:var(--diminshed);
+    margin-top:6px;
+    letter-spacing:.06em;
+    text-transform:uppercase;
 }
