@@ -9,10 +9,10 @@
 <aside class="left-panel">
     <div class="left-panel-header">
         <p class = "label"> Proyecto</p>
-        <div class = "project"> Ejemplo de Proyecto</div>
+        <div class = "project"> Descripción de Proyecto</div>
     </div>
     <nav>
-        <a class="left-panel-item" href="index.html" >Índice del TFM</a>
+        <a class="left-panel-item" href="index.html">Índice del TFM</a>
         <a class="left-panel-item" href="compromiso.html">Compromiso y carga del equipo</a>
         <a class="left-panel-item" href="estimaciones.html">Estimación Asistida</a>
         <a class="left-panel-item" href="agile.html">Seguimiento Ágil</a>
@@ -21,6 +21,106 @@
         <a class="left-panel-item" href="pipelines.html">Pipeline y plantillas</a>
     </nav>
 </aside>
+
+<main class="content-frame">
+<section class="view-frame">
+    <p class="label">Problema 5 — Dificultad para mantener la trazabilidad</p>
+    <h1 class="h1">Trazabilidad a GDD</h1>
+    <p class="cap lede">Todas las tareas dependen de un apartado del documento de diseño. Se puede ver de dónde viene de forma directa, y si el apartado cambia, las tareas que dependen de él quedan marcadas.</p>
+
+<div class="picker"><input type="radio" name="gdd" id="gdd-0" class="picker-radio" checked><input type="radio" name="gdd" id="gdd-1" class="picker-radio">
+  <div class="picker-tabs" role="tablist">
+    <label for="gdd-0">3.2 Sistema de parry</label>
+    <label for="gdd-1">4.1 El taller</label>
+  </div>
+    <div class="picker-panels"><div class="picker-panel">
+    
+
+    <div class="cols c-2b">
+      <div class="card">
+        <p class="label">Tarea · ART-051</p>
+        <h2 class="h1" style="font-size:20px;margin-bottom:14px">Animación de parry del jugador</h2>
+
+        <p class="label">Origen en el GDD</p>
+        <div class="ph" style="margin-bottom:14px">
+          <p class="crumb">GDD › 3.2 Sistema de parry</p>
+          <button class="link">Abrir el apartado del GDD</button>
+        </div>
+
+        <div class="rule"></div>
+        <div class="stats">
+          <div class="stat"><p class="label">Disciplina</p><div>Arte 3D</div></div>
+          <div class="stat"><p class="label">Asset</p><div>Personaje enemigo</div></div>
+          <div class="stat"><p class="label">Estimación</p><div>12 h</div></div>
+        </div>
+        <div class="rule"></div>
+
+        <p class="label">Cadena de dependencias</p>
+        <div class="ph" style="margin-bottom:14px"><p class="cap">3.2 Sistema de parry  →  CODE-042 Ventana de input del parry  →  ART-051 Animación de parry del jugador  →  SFX-013 Sonido de parry acertado</p></div>
+
+      </div>
+
+      <div>
+        <div class="card">
+          <p class="label">Apartado del documento de diseño</p><h2 class="h2">3.2 Sistema de parry</h2>
+          <textarea rows="7">Al pulsar el botón de defensa justo antes del impacto, el jugador anula el daño y desequilibra al enemigo durante 1,5 s. La ventana de parry es de 0,2 s. Un parry fallido deja al jugador expuesto durante 0,6 s.</textarea>
+          <p class="cap" style="margin-top:6px">Al guardar, las 6 tareas que cuelgan de este apartado se marcan para revisión.</p>
+          <div class="btn-row"><button class="btn">Guardar apartado</button></div>
+          <p class="cap" style="margin-top:10px">Última edición: 19 abr.</p>
+
+          <div class="rule"></div>
+
+          <h2 class="h2">Tareas que nacen de este apartado · 6</h2>
+          <ul class="list-plain"><li><button class="link"><span class="mono">CODE-042</span> · Ventana de input del parry</button></li><li><button class="link"><span class="mono">ART-051</span> · Animación de parry del jugador</button></li><li><button class="link"><span class="mono">SFX-013</span> · Sonido de parry acertado</button></li><li><button class="link"><span class="mono">QA-008</span> · Test de timing del parry</button></li><li><button class="link"><span class="mono">UI-006</span> · HUD de resistencia</button></li><li><button class="link"><span class="mono">CODE-030</span> · Cámara en tercera persona</button></li></ul>
+          <div class="btn-row"><button class="btn">Crear tarea desde este apartado</button></div>
+        </div>
+      </div>
+    </div></div><div class="picker-panel">
+    
+
+    <div class="cols c-2b">
+      <div class="card">
+        <p class="label">Tarea · ART-047</p>
+        <h2 class="h1" style="font-size:20px;margin-bottom:14px">Set de props del taller</h2>
+
+        <p class="label">Origen en el GDD</p>
+        <div class="ph" style="margin-bottom:14px">
+          <p class="crumb">GDD › 4.1 El taller</p>
+          <button class="link">Abrir el apartado del GDD</button>
+        </div>
+
+        <div class="rule"></div>
+        <div class="stats">
+          <div class="stat"><p class="label">Disciplina</p><div>Arte 3D</div></div>
+          <div class="stat"><p class="label">Asset</p><div>Prop de entorno</div></div>
+          <div class="stat"><p class="label">Estimación</p><div>8 h</div></div>
+        </div>
+        <div class="rule"></div>
+
+        <p class="label">Cadena de dependencias</p>
+        <div class="ph" style="margin-bottom:14px"><p class="cap">4.1 El taller  →  ART-047 Set de props del taller  →  DES-019 Balanceo del taller  →  CODE-055 Guardado en checkpoints</p></div>
+
+      </div>
+
+      <div>
+        <div class="card">
+          <p class="label">Apartado del documento de diseño</p><h2 class="h2">4.1 El taller</h2>
+          <textarea rows="7">Primer espacio interior del juego. Sirve de tutorial de recursos: el jugador aprende a desmontar props para obtener piezas con las que fabricar mejoras.</textarea>
+          <p class="cap" style="margin-top:6px">Al guardar, las 9 tareas que cuelgan de este apartado se marcan para revisión.</p>
+          <div class="btn-row"><button class="btn">Guardar apartado</button></div>
+          
+
+          <div class="rule"></div>
+
+          <h2 class="h2">Tareas que nacen de este apartado · 9</h2>
+          <ul class="list-plain"><li><button class="link"><span class="mono">ART-047</span> · Set de props del taller</button></li><li><button class="link"><span class="mono">DES-019</span> · Balanceo del taller</button></li><li><button class="link"><span class="mono">CODE-055</span> · Guardado en checkpoints</button></li><li><button class="link"><span class="mono">DES-023</span> · Economía de piezas del taller</button></li><li><button class="link"><span class="mono">ART-060</span> · Enemigo «Recolector» — modelado</button></li><li><button class="link"><span class="mono">CODE-058</span> · Menú de pausa</button></li><li><button class="link"><span class="mono">ART-063</span> · Enemigo «Recolector» — rig</button></li><li><button class="link"><span class="mono">ART-035</span> · Blockout del taller</button></li><li><button class="link"><span class="mono">SFX-007</span> · Pasos sobre metal</button></li></ul>
+          <div class="btn-row"><button class="btn">Crear tarea desde este apartado</button></div>
+        </div>
+      </div>
+    </div></div></div></div>
+</section>
+
+</main>
 
 </div>
 

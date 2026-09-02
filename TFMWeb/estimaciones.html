@@ -9,10 +9,10 @@
 <aside class="left-panel">
     <div class="left-panel-header">
         <p class = "label"> Proyecto</p>
-        <div class = "project"> Ejemplo de Proyecto</div>
+        <div class = "project"> Descripción de Proyecto</div>
     </div>
     <nav>
-        <a class="left-panel-item" href="index.html" >Índice del TFM</a>
+        <a class="left-panel-item" href="index.html">Índice del TFM</a>
         <a class="left-panel-item" href="compromiso.html">Compromiso y carga del equipo</a>
         <a class="left-panel-item" href="estimaciones.html" aria-current="page">Estimación Asistida</a>
         <a class="left-panel-item" href="agile.html">Seguimiento Ágil</a>
@@ -21,6 +21,192 @@
         <a class="left-panel-item" href="pipelines.html">Pipeline y plantillas</a>
     </nav>
 </aside>
+
+<main class="content-frame">
+<section class="view-frame">
+    <p class="label">Problema 2 — Falta de conocimiento de estimaciones</p>
+    <h1 class="h1">Estimación asistida</h1>
+    <p class="cap lede">Al crear una tarea, la herramienta busca tareas del mismo tipo completadas y propone una estimación basada en lo que tardaron en completarse, no en la estimación.</p>
+
+<div class="picker"><input type="radio" name="est" id="est-0" class="picker-radio" checked><input type="radio" name="est" id="est-1" class="picker-radio"><input type="radio" name="est" id="est-2" class="picker-radio"><div class="picker-tabs" role="tablist"><label for="est-0">Personaje enemigo</label><label for="est-1">Prop de entorno</label><label for="est-2">Mecánica</label></div><p class="cap picker-ayuda">Al cambiar el tipo de asset, la sugerencia se recalcula con las tareas comparables de ese tipo.</p><div class="picker-panels"><div class="picker-panel">
+    <div class="cols c-2">
+      <div>
+        <div class="card">
+          <h2 class="h2">Nueva tarea</h2>
+          <label class="field"><span>Título</span><input value="Enemigo «Recolector» — modelado"></label>
+          <div class="field"><p class="label">Disciplina</p><div class="dato">Arte 3D</div></div>
+          <div class="field"><p class="label">Tipo de asset</p><div class="dato">Personaje enemigo</div></div>
+          <div class="field"><p class="label">Complejidad</p><div class="dato">Media</div></div>
+          <div class="rule"></div>
+          <label class="field"><span>Estimación</span>
+            <span style="display:flex;gap:8px;align-items:center">
+              <input type="number" min="0" step="0.5" value="13"> <span class="cap">horas</span>
+            </span>
+          </label>
+          <p class="cap">Prerrellenado con la sugerencia. Es editable.</p>
+          <div class="btn-row"><button class="btn">Crear tarea</button></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <h2 class="h2">Sugerencia basada en el histórico</h2>
+          
+            <div class="stats" style="margin-bottom:14px">
+              <div class="stat"><p class="label">Sugerido</p><span class="v">13 h</span></div>
+              <div class="stat"><p class="label">Rango observado</p><span class="v">10–15 h</span></div>
+              <div class="stat"><p class="label">Muestra</p><span class="v">3</span></div>
+            </div>
+            <div class="alert">
+              <p class="label">Desviación histórica del equipo</p>
+              <span class="strong">En arte 3d, este equipo tarda de media un 27 % más de lo que estima.</span>
+              <p class="cap">La sugerencia parte de las horas reales de tareas parecidas. La comparación se basa en assets del mismo tipo y disciplina.</p>
+            </div>
+          
+        </div>
+
+        <div class="card">
+          <h2 class="h2">Tareas comparables ya cerradas</h2>
+          <table class="w">
+            <thead><tr><th>Tarea</th><th>Estimado</th><th>Real</th><th>Desvío</th></tr></thead>
+            <tbody><tr>
+      <td>Enemigo «Chatarrero»</td>
+      <td class="num">8 h</td>
+      <td class="num">13 h</td>
+      <td class="num">+63 %</td>
+    </tr><tr>
+      <td>Enemigo «Vigía»</td>
+      <td class="num">12 h</td>
+      <td class="num">15 h</td>
+      <td class="num">+25 %</td>
+    </tr><tr>
+      <td>Enemigo «Dron»</td>
+      <td class="num">10 h</td>
+      <td class="num">10 h</td>
+      <td class="num">0 %</td>
+    </tr></tbody>
+          </table>
+        </div>
+      </div>
+    </div></div><div class="picker-panel">
+    <div class="cols c-2">
+      <div>
+        <div class="card">
+          <h2 class="h2">Nueva tarea</h2>
+          <label class="field"><span>Título</span><input value="Enemigo «Recolector» — modelado"></label>
+          <div class="field"><p class="label">Disciplina</p><div class="dato">Arte 3D</div></div>
+          <div class="field"><p class="label">Tipo de asset</p><div class="dato">Prop de entorno</div></div>
+          <div class="field"><p class="label">Complejidad</p><div class="dato">Media</div></div>
+          <div class="rule"></div>
+          <label class="field"><span>Estimación</span>
+            <span style="display:flex;gap:8px;align-items:center">
+              <input type="number" min="0" step="0.5" value="5.5"> <span class="cap">horas</span>
+            </span>
+          </label>
+          <p class="cap">Prerrellenado con la sugerencia. Es editable.</p>
+          <div class="btn-row"><button class="btn">Crear tarea</button></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <h2 class="h2">Sugerencia basada en el histórico</h2>
+          
+            <div class="stats" style="margin-bottom:14px">
+              <div class="stat"><p class="label">Sugerido</p><span class="v">5,5 h</span></div>
+              <div class="stat"><p class="label">Rango observado</p><span class="v">5–6 h</span></div>
+              <div class="stat"><p class="label">Muestra</p><span class="v">2</span></div>
+            </div>
+            <div class="alert">
+              <p class="label">Desviación histórica del equipo</p>
+              <span class="strong">En arte 3d, este equipo tarda de media un 27 % más de lo que estima.</span>
+              <p class="cap">La sugerencia parte de las horas reales de tareas parecidas. La comparación se basa en assets del mismo tipo y disciplina.</p>
+            </div>
+          
+        </div>
+
+        <div class="card">
+          <h2 class="h2">Tareas comparables ya cerradas</h2>
+          <table class="w">
+            <thead><tr><th>Tarea</th><th>Estimado</th><th>Real</th><th>Desvío</th></tr></thead>
+            <tbody><tr>
+      <td>Banco de trabajo</td>
+      <td class="num">4 h</td>
+      <td class="num">5 h</td>
+      <td class="num">+25 %</td>
+    </tr><tr>
+      <td>Estantería modular</td>
+      <td class="num">5 h</td>
+      <td class="num">6 h</td>
+      <td class="num">+20 %</td>
+    </tr></tbody>
+          </table>
+        </div>
+      </div>
+    </div></div><div class="picker-panel">
+    <div class="cols c-2">
+      <div>
+        <div class="card">
+          <h2 class="h2">Nueva tarea</h2>
+          <label class="field"><span>Título</span><input value="Enemigo «Recolector» — modelado"></label>
+          <div class="field"><p class="label">Disciplina</p><div class="dato">Programación</div></div>
+          <div class="field"><p class="label">Tipo de asset</p><div class="dato">Mecánica</div></div>
+          <div class="field"><p class="label">Complejidad</p><div class="dato">Media</div></div>
+          <div class="rule"></div>
+          <label class="field"><span>Estimación</span>
+            <span style="display:flex;gap:8px;align-items:center">
+              <input type="number" min="0" step="0.5" value="9"> <span class="cap">horas</span>
+            </span>
+          </label>
+          <p class="cap">Prerrellenado con la sugerencia. Es editable.</p>
+          <div class="btn-row"><button class="btn">Crear tarea</button></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <h2 class="h2">Sugerencia basada en el histórico</h2>
+          
+            <div class="stats" style="margin-bottom:14px">
+              <div class="stat"><p class="label">Sugerido</p><span class="v">9 h</span></div>
+              <div class="stat"><p class="label">Rango observado</p><span class="v">8–10 h</span></div>
+              <div class="stat"><p class="label">Muestra</p><span class="v">3</span></div>
+            </div>
+            <div class="alert">
+              <p class="label">Desviación histórica del equipo</p>
+              <span class="strong">En programación, este equipo tarda de media un 45 % más de lo que estima.</span>
+              <p class="cap">La sugerencia parte de las horas reales de tareas parecidas. La comparación se basa en assets del mismo tipo y disciplina.</p>
+            </div>
+          
+        </div>
+
+        <div class="card">
+          <h2 class="h2">Tareas comparables ya cerradas</h2>
+          <table class="w">
+            <thead><tr><th>Tarea</th><th>Estimado</th><th>Real</th><th>Desvío</th></tr></thead>
+            <tbody><tr>
+      <td>Salto con impulso</td>
+      <td class="num">6 h</td>
+      <td class="num">9 h</td>
+      <td class="num">+50 %</td>
+    </tr><tr>
+      <td>Empujar objetos</td>
+      <td class="num">8 h</td>
+      <td class="num">10 h</td>
+      <td class="num">+25 %</td>
+    </tr><tr>
+      <td>Agarre en repisas</td>
+      <td class="num">5 h</td>
+      <td class="num">8 h</td>
+      <td class="num">+60 %</td>
+    </tr></tbody>
+          </table>
+        </div>
+      </div>
+    </div></div></div></div>
+</section>
+
+</main>
 
 </div>
 

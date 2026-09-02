@@ -9,10 +9,10 @@
 <aside class="left-panel">
     <div class="left-panel-header">
         <p class = "label"> Proyecto</p>
-        <div class = "project"> Ejemplo de Proyecto</div>
+        <div class = "project"> Descripción de Proyecto</div>
     </div>
     <nav>
-        <a class="left-panel-item" href="index.html" >Índice del TFM</a>
+        <a class="left-panel-item" href="index.html">Índice del TFM</a>
         <a class="left-panel-item" href="compromiso.html">Compromiso y carga del equipo</a>
         <a class="left-panel-item" href="estimaciones.html">Estimación Asistida</a>
         <a class="left-panel-item" href="agile.html">Seguimiento Ágil</a>
@@ -21,6 +21,165 @@
         <a class="left-panel-item" href="pipelines.html" aria-current="page">Pipeline y plantillas</a>
     </nav>
 </aside>
+
+<main class="content-frame">
+<section class="view-frame">
+    <p class="label">Problema 6 — Desconocimiento de flujos de trabajo</p>
+    <h1 class="h1">Pipeline y plantillas</h1>
+    <p class="cap lede">La herramienta trae algunos pipelines escritos y distinguiendo secuencial y paralelo.</p>
+
+<div class="picker"><input type="radio" name="pip" id="pip-0" class="picker-radio" checked><input type="radio" name="pip" id="pip-1" class="picker-radio">
+  <input type="radio" name="pip" id="pip-2" class="picker-radio">
+  <div class="picker-tabs" role="tablist"><label for="pip-0">Personaje 3D</label>
+    <label for="pip-1">Prop de entorno</label><label for="pip-2">Efecto de sonido</label></div>
+    <div class="picker-panels"><div class="picker-panel">
+    <div class="cols">
+<div class="card">
+        <div class="alert-row" style="margin-bottom:8px">
+          <div><p class="label">Plantilla seleccionada</p><h2 class="h2" style="margin:0">Personaje 3D</h2></div>
+          <div class="btn-row tight"><button class="btn">Aplicar a una tarea</button></div>
+        </div>
+        <div class="rule"></div>
+
+        <p class="label">En serie — cada paso necesita el anterior</p>
+        <div class="step">
+      <span class="n">1</span>
+      <span>Concept art aprobado</span>
+      <span class="d">Arte 2D</span>
+      <span><span class="mono">4</span> h</span>
+    </div><div class="step">
+      <span class="n">2</span>
+      <span>Modelado high poly</span>
+      <span class="d">Arte 3D</span>
+      <span><span class="mono">10</span> h</span>
+    </div><div class="step">
+      <span class="n">3</span>
+      <span>Retopología y UVs</span>
+      <span class="d">Arte 3D</span>
+      <span><span class="mono">6</span> h</span>
+    </div>
+
+        <div class="rule"></div>
+        <p class="label">En paralelo — arrancan a la vez al terminar la serie</p>
+        <div class="step">
+      <span class="n">1</span>
+      <span>Texturizado</span>
+      <span class="d">Arte 3D</span>
+      <span><span class="mono">8</span> h</span>
+    </div><div class="step">
+      <span class="n">2</span>
+      <span>Rig</span>
+      <span class="d">Arte 3D</span>
+      <span><span class="mono">6</span> h</span>
+    </div>
+
+        <div class="rule"></div>
+        <p class="label">Cierre</p>
+        <div class="step">
+      <span class="n">1</span>
+      <span>Integración en el motor</span>
+      <span class="d">Programación</span>
+      <span><span class="mono">3</span> h</span>
+    </div>
+
+        <div class="rule"></div>
+        <p class="cap">Total: <span class="mono">37 h</span> repartidas entre 3 disciplinas (Arte 2D, Arte 3D, Programación).</p>
+      </div>
+    </div></div><div class="picker-panel">
+    <div class="cols">
+<div class="card">
+        <div class="alert-row" style="margin-bottom:8px">
+          <div><p class="label">Plantilla seleccionada</p><h2 class="h2" style="margin:0">Prop de entorno</h2></div>
+          <div class="btn-row tight"><button class="btn">Aplicar a una tarea</button></div>
+        </div>
+        <div class="rule"></div>
+
+        <p class="label">En serie — cada paso necesita el anterior</p>
+        <div class="step">
+      <span class="n">1</span>
+      <span>Referencia y bloqueo</span>
+      <span class="d">Arte 3D</span>
+      <span><span class="mono">2</span> h</span>
+    </div><div class="step">
+      <span class="n">2</span>
+      <span>Modelado final</span>
+      <span class="d">Arte 3D</span>
+      <span><span class="mono">5</span> h</span>
+    </div>
+
+        <div class="rule"></div>
+        <p class="label">En paralelo — arrancan a la vez al terminar la serie</p>
+        <div class="step">
+      <span class="n">1</span>
+      <span>Texturizado</span>
+      <span class="d">Arte 3D</span>
+      <span><span class="mono">4</span> h</span>
+    </div><div class="step">
+      <span class="n">2</span>
+      <span>Colisiones</span>
+      <span class="d">Programación</span>
+      <span><span class="mono">1</span> h</span>
+    </div>
+
+        <div class="rule"></div>
+        <p class="label">Cierre</p>
+        <div class="step">
+      <span class="n">1</span>
+      <span>Importación y revisión</span>
+      <span class="d">Arte 3D</span>
+      <span><span class="mono">1</span> h</span>
+    </div>
+
+        <div class="rule"></div>
+        <p class="cap">Total: <span class="mono">13 h</span> repartidas entre 2 disciplinas (Arte 3D, Programación).</p>
+      </div>
+    </div></div><div class="picker-panel">
+    <div class="cols">
+<div class="card">
+        <div class="alert-row" style="margin-bottom:8px">
+          <div><p class="label">Plantilla seleccionada</p><h2 class="h2" style="margin:0">Efecto de sonido</h2></div>
+          <div class="btn-row tight"><button class="btn">Aplicar a una tarea</button></div>
+        </div>
+        <div class="rule"></div>
+
+        <p class="label">En serie — cada paso necesita el anterior</p>
+        <div class="step">
+      <span class="n">1</span>
+      <span>Búsqueda de referencias</span>
+      <span class="d">Audio</span>
+      <span><span class="mono">1</span> h</span>
+    </div><div class="step">
+      <span class="n">2</span>
+      <span>Grabación o síntesis</span>
+      <span class="d">Audio</span>
+      <span><span class="mono">3</span> h</span>
+    </div>
+
+        <div class="rule"></div>
+        <p class="label">En paralelo — arrancan a la vez al terminar la serie</p>
+        <div class="step">
+      <span class="n">1</span>
+      <span>Mezcla</span>
+      <span class="d">Audio</span>
+      <span><span class="mono">1</span> h</span>
+    </div>
+
+        <div class="rule"></div>
+        <p class="label">Cierre</p>
+        <div class="step">
+      <span class="n">1</span>
+      <span>Integración en el motor</span>
+      <span class="d">Programación</span>
+      <span><span class="mono">1</span> h</span>
+    </div>
+
+        <div class="rule"></div>
+        <p class="cap">Total: <span class="mono">6 h</span> repartidas entre 2 disciplinas (Audio, Programación).</p>
+      </div>
+    </div></div></div></div>
+</section>
+
+</main>
 
 </div>
 

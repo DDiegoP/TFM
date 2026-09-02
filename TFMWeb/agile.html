@@ -9,10 +9,10 @@
 <aside class="left-panel">
     <div class="left-panel-header">
         <p class = "label"> Proyecto</p>
-        <div class = "project"> Ejemplo de Proyecto</div>
+        <div class = "project"> Descripción de Proyecto</div>
     </div>
     <nav>
-        <a class="left-panel-item" href="index.html" >Índice del TFM</a>
+        <a class="left-panel-item" href="index.html">Índice del TFM</a>
         <a class="left-panel-item" href="compromiso.html">Compromiso y carga del equipo</a>
         <a class="left-panel-item" href="estimaciones.html">Estimación Asistida</a>
         <a class="left-panel-item" href="agile.html" aria-current="page">Seguimiento Ágil</a>
@@ -21,6 +21,318 @@
         <a class="left-panel-item" href="pipelines.html">Pipeline y plantillas</a>
     </nav>
 </aside>
+
+<main class="content-frame">
+<section class="view-frame">
+    <p class="label">Problema 3 — Falta de seguimiento de las metodologías ágiles</p>
+    <h1 class="h1">Seguimiento ágil</h1>
+    <p class="cap lede">La interfaz favorece el uso de Scrum sin necesidad de tener conocimientos profundos. Cuando una regla se incumple, la herramienta lo dice.</p>
+
+<div style="margin-bottom:20px">
+    <div class="alert"><div class="alert-row">
+      <div><span class="strong">El sprint 3 lleva 21 días abiertos</span><p class="cap">La duración fijada por el equipo era de 14 días. Si no se cierra el sprint la información sobre la velocidad será imprecisa.</p></div>
+      <button class="btn">Cerrar sprint</button>
+    </div></div>
+    <div class="alert"><div class="alert-row">
+      <div><span class="strong">2 tareas abiertas no tienen estimación</span><p class="cap">Sin estimar no se puede calcular el trabajo restante ni proyectar la fecha de cierre.</p></div>
+      <button class="btn">Estimar ahora</button>
+    </div></div>
+    <div class="alert"><div class="alert-row">
+      <div><span class="strong">El sprint 2 se cerró sin retrospectiva</span><p class="cap">Es aconsejable llevarla a cabo para mejorar los procesos del equipo.</p></div>
+      <button class="btn">Abrir retrospectiva</button>
+    </div></div></div><div class="picker"><input type="radio" name="tab" id="tab-0" class="picker-radio" checked><input type="radio" name="tab" id="tab-1" class="picker-radio"><input type="radio" name="tab" id="tab-2" class="picker-radio"><input type="radio" name="tab" id="tab-3" class="picker-radio"><div class="picker-tabs" role="tablist"><label for="tab-0">Backlog</label><label for="tab-1">Sprint actual</label><label for="tab-2">Retrospectiva</label><label for="tab-3">Métricas</label></div>
+    <div class="picker-panels"><div class="picker-panel">
+      <div class="card">
+        <div class="btn-row tight" style="margin-bottom:12px">
+          <button class="chip on">todas</button><button class="chip ">sin estimar</button><button class="chip ">Programación</button><button class="chip ">Arte 3D</button><button class="chip ">Arte 2D</button><button class="chip ">Diseño</button><button class="chip ">Audio</button>
+        </div>
+        <table class="w">
+          <thead><tr><th>ID</th><th>Tarea</th><th>Disciplina</th><th>Estimación (h)</th><th>Vence</th></tr></thead>
+          <tbody><tr>
+      <td><span class="mono">CODE-042</span></td>
+      <td>Ventana de input del parry</td>
+      <td class="soft">Programación</td>
+      <td class="num"><span class="mono">10 h</span></td>
+      <td class="num strong">12 abr</td>
+    </tr><tr>
+      <td><span class="mono">ART-051</span></td>
+      <td>Animación de parry del jugador</td>
+      <td class="soft">Arte 3D</td>
+      <td class="num"><span class="mono">12 h</span></td>
+      <td class="num ">24 abr</td>
+    </tr><tr>
+      <td><span class="mono">SFX-013</span></td>
+      <td>Sonido de parry acertado</td>
+      <td class="soft">Audio</td>
+      <td class="num"><span class="mono">10 h</span></td>
+      <td class="num ">30 abr</td>
+    </tr><tr>
+      <td><span class="mono">QA-008</span></td>
+      <td>Test de timing del parry</td>
+      <td class="soft">Programación</td>
+      <td class="num"><span class="mono">6 h</span></td>
+      <td class="num ">2 may</td>
+    </tr><tr>
+      <td><span class="mono">UI-006</span></td>
+      <td>HUD de resistencia</td>
+      <td class="soft">Arte 2D</td>
+      <td class="num"><span class="mono">8 h</span></td>
+      <td class="num ">1 may</td>
+    </tr><tr>
+      <td><span class="mono">ART-047</span></td>
+      <td>Set de props del taller</td>
+      <td class="soft">Arte 3D</td>
+      <td class="num"><span class="mono">8 h</span></td>
+      <td class="num strong">18 abr</td>
+    </tr><tr>
+      <td><span class="mono">DES-019</span></td>
+      <td>Balanceo del taller</td>
+      <td class="soft">Diseño</td>
+      <td class="num"><span class="mono">9 h</span></td>
+      <td class="num ">28 abr</td>
+    </tr><tr>
+      <td><span class="mono">CODE-055</span></td>
+      <td>Guardado en checkpoints</td>
+      <td class="soft">Programación</td>
+      <td class="num"><span class="mono">8 h</span></td>
+      <td class="num ">6 may</td>
+    </tr><tr>
+      <td><span class="mono">DES-023</span></td>
+      <td>Economía de piezas del taller</td>
+      <td class="soft">Diseño</td>
+      <td class="num"><span class="mono">5 h</span></td>
+      <td class="num ">8 may</td>
+    </tr><tr>
+      <td><span class="mono">ART-060</span></td>
+      <td>Enemigo «Recolector» — modelado</td>
+      <td class="soft">Arte 3D</td>
+      <td class="num"><span class="mono">4 h</span></td>
+      <td class="num ">8 may</td>
+    </tr><tr>
+      <td><span class="mono">CODE-058</span></td>
+      <td>Menú de pausa</td>
+      <td class="soft">Programación</td>
+      <td class="num"><span class="cap">sin estimar</span></td>
+      <td class="num ">11 may</td>
+    </tr><tr>
+      <td><span class="mono">ART-063</span></td>
+      <td>Enemigo «Recolector» — rig</td>
+      <td class="soft">Arte 3D</td>
+      <td class="num"><span class="cap">sin estimar</span></td>
+      <td class="num ">11 may</td>
+    </tr></tbody></table>
+      </div>
+    </div><div class="picker-panel">
+      <p class="cap" style="margin-bottom:12px">Sprint 3 · Iniciado el 31 de marzo · En marcha 21 días</p>
+      <div class="cols c-4"><div class="kcol">
+      <div class="kcol-head"><p class="label" style="margin:0">Por hacer · 7</p></div>
+      <div class="kcard ">
+        <span class="id">SFX-013</span>
+        <p class="t">Sonido de parry acertado</p>
+        <div class="meta">
+          <span class="chip">Audio</span>
+          <span class="moves">
+            <button class="btn icon sm" disabled="" aria-label="Mover SFX-013 a la izquierda">‹</button>
+            <button class="btn icon sm" aria-label="Mover SFX-013 a la derecha">›</button>
+          </span>
+        </div>
+      </div><div class="kcard ">
+        <span class="id">QA-008</span>
+        <p class="t">Test de timing del parry</p>
+        <div class="meta">
+          <span class="chip">Programación</span>
+          <span class="moves">
+            <button class="btn icon sm" disabled="" aria-label="Mover QA-008 a la izquierda">‹</button>
+            <button class="btn icon sm" aria-label="Mover QA-008 a la derecha">›</button>
+          </span>
+        </div>
+      </div><div class="kcard ">
+        <span class="id">CODE-055</span>
+        <p class="t">Guardado en checkpoints</p>
+        <div class="meta">
+          <span class="chip">Programación</span>
+          <span class="moves">
+            <button class="btn icon sm" disabled="" aria-label="Mover CODE-055 a la izquierda">‹</button>
+            <button class="btn icon sm" aria-label="Mover CODE-055 a la derecha">›</button>
+          </span>
+        </div>
+      </div><div class="kcard ">
+        <span class="id">DES-023</span>
+        <p class="t">Economía de piezas del taller</p>
+        <div class="meta">
+          <span class="chip">Diseño</span>
+          <span class="moves">
+            <button class="btn icon sm" disabled="" aria-label="Mover DES-023 a la izquierda">‹</button>
+            <button class="btn icon sm" aria-label="Mover DES-023 a la derecha">›</button>
+          </span>
+        </div>
+      </div><div class="kcard ">
+        <span class="id">ART-060</span>
+        <p class="t">Enemigo «Recolector» — modelado</p>
+        <div class="meta">
+          <span class="chip">Arte 3D</span>
+          <span class="moves">
+            <button class="btn icon sm" disabled="" aria-label="Mover ART-060 a la izquierda">‹</button>
+            <button class="btn icon sm" aria-label="Mover ART-060 a la derecha">›</button>
+          </span>
+        </div>
+      </div><div class="kcard ">
+        <span class="id">CODE-058</span>
+        <p class="t">Menú de pausa</p>
+        <div class="meta">
+          <span class="chip">Programación</span>
+          <span class="moves">
+            <button class="btn icon sm" disabled="" aria-label="Mover CODE-058 a la izquierda">‹</button>
+            <button class="btn icon sm" aria-label="Mover CODE-058 a la derecha">›</button>
+          </span>
+        </div>
+      </div><div class="kcard ">
+        <span class="id">ART-063</span>
+        <p class="t">Enemigo «Recolector» — rig</p>
+        <div class="meta">
+          <span class="chip">Arte 3D</span>
+          <span class="moves">
+            <button class="btn icon sm" disabled="" aria-label="Mover ART-063 a la izquierda">‹</button>
+            <button class="btn icon sm" aria-label="Mover ART-063 a la derecha">›</button>
+          </span>
+        </div>
+      </div>
+      
+    </div><div class="kcol">
+      <div class="kcol-head"><p class="label" style="margin:0">En curso · 4/3</p></div>
+      <div class="kcard ">
+        <span class="id">CODE-042</span>
+        <p class="t">Ventana de input del parry</p>
+        <div class="meta">
+          <span class="chip">Programación</span>
+          <span class="moves">
+            <button class="btn icon sm" aria-label="Mover CODE-042 a la izquierda">‹</button>
+            <button class="btn icon sm" aria-label="Mover CODE-042 a la derecha">›</button>
+          </span>
+        </div>
+      </div><div class="kcard ">
+        <span class="id">ART-051</span>
+        <p class="t">Animación de parry del jugador</p>
+        <div class="meta">
+          <span class="chip">Arte 3D</span>
+          <span class="moves">
+            <button class="btn icon sm" aria-label="Mover ART-051 a la izquierda">‹</button>
+            <button class="btn icon sm" aria-label="Mover ART-051 a la derecha">›</button>
+          </span>
+        </div>
+      </div><div class="kcard ">
+        <span class="id">ART-047</span>
+        <p class="t">Set de props del taller</p>
+        <div class="meta">
+          <span class="chip">Arte 3D</span>
+          <span class="moves">
+            <button class="btn icon sm" aria-label="Mover ART-047 a la izquierda">‹</button>
+            <button class="btn icon sm" aria-label="Mover ART-047 a la derecha">›</button>
+          </span>
+        </div>
+      </div><div class="kcard ">
+        <span class="id">DES-019</span>
+        <p class="t">Balanceo del taller</p>
+        <div class="meta">
+          <span class="chip">Diseño</span>
+          <span class="moves">
+            <button class="btn icon sm" aria-label="Mover DES-019 a la izquierda">‹</button>
+            <button class="btn icon sm" aria-label="Mover DES-019 a la derecha">›</button>
+          </span>
+        </div>
+      </div>
+      <p class="cap" style="margin-top:8px">Por encima del límite recomendado de 3 en curso.</p>
+    </div><div class="kcol">
+      <div class="kcol-head"><p class="label" style="margin:0">En revisión · 1</p></div>
+      <div class="kcard ">
+        <span class="id">UI-006</span>
+        <p class="t">HUD de resistencia</p>
+        <div class="meta">
+          <span class="chip">Arte 2D</span>
+          <span class="moves">
+            <button class="btn icon sm" aria-label="Mover UI-006 a la izquierda">‹</button>
+            <button class="btn icon sm" aria-label="Mover UI-006 a la derecha">›</button>
+          </span>
+        </div>
+      </div>
+      
+    </div><div class="kcol">
+      <div class="kcol-head"><p class="label" style="margin:0">Hecho · 3</p></div>
+      <div class="kcard ">
+        <span class="id">CODE-030</span>
+        <p class="t">Cámara en tercera persona</p>
+        <div class="meta">
+          <span class="chip">Programación</span>
+          <span class="moves">
+            <button class="btn icon sm" aria-label="Mover CODE-030 a la izquierda">‹</button>
+            <button class="btn icon sm" disabled="" aria-label="Mover CODE-030 a la derecha">›</button>
+          </span>
+        </div>
+      </div><div class="kcard ">
+        <span class="id">ART-035</span>
+        <p class="t">Blockout del taller</p>
+        <div class="meta">
+          <span class="chip">Arte 3D</span>
+          <span class="moves">
+            <button class="btn icon sm" aria-label="Mover ART-035 a la izquierda">‹</button>
+            <button class="btn icon sm" disabled="" aria-label="Mover ART-035 a la derecha">›</button>
+          </span>
+        </div>
+      </div><div class="kcard ">
+        <span class="id">SFX-007</span>
+        <p class="t">Pasos sobre metal</p>
+        <div class="meta">
+          <span class="chip">Audio</span>
+          <span class="moves">
+            <button class="btn icon sm" aria-label="Mover SFX-007 a la izquierda">‹</button>
+            <button class="btn icon sm" disabled="" aria-label="Mover SFX-007 a la derecha">›</button>
+          </span>
+        </div>
+      </div>
+      
+    </div></div>
+    </div><div class="picker-panel">
+      <div class="card">
+        <h2 class="h2">Retrospectiva del sprint 3</h2>
+        <label class="field"><span>Qué funcionó</span><textarea rows="3"></textarea></label>
+        <label class="field"><span>Qué no funcionó</span><textarea rows="3"></textarea></label>
+        <label class="field"><span>Qué cambiamos el próximo sprint</span><textarea rows="3"></textarea></label>
+        <div class="btn-row"><button class="btn">Guardar retrospectiva</button></div>
+      </div>
+    </div><div class="picker-panel">
+      <div class="cols" style="grid-template-columns:1fr 1fr;gap:12px">
+        <div class="card">
+          <h2 class="h2">Trabajo restante del sprint</h2>
+          <svg class="chart" viewBox="0 0 320 140" role="img" aria-label="Gráfico de trabajo restante">
+    <line class="grid" x1="22" y1="118" x2="298" y2="118"></line>
+    <line class="grid" x1="22" y1="22" x2="22" y2="118"></line>
+    <polyline class="ideal" points="22,23.500935543905115 35.14285714285714,30.250868719340446 48.285714285714285,37.000801894775805 61.42857142857142,43.750735070211164 74.57142857142857,50.500668245646494 87.71428571428571,57.25060142108187 100.85714285714285,64.00053459651721 114,70.75046777195256 127.14285714285714,77.5004009473879 140.28571428571428,84.25033412282326 153.42857142857142,91.0002672982586 166.57142857142858,97.75020047369395 179.7142857142857,104.5001336491293 192.85714285714286,111.25006682456466 206,118 219.14285714285714,118 232.28571428571428,118 245.42857142857144,118 258.57142857142856,118 271.7142857142857,118 284.85714285714283,118 298,118"></polyline>
+    <polyline class="real" points="22,23.500935543905115 35.14285714285714,22 48.285714285714285,24.154498731856307 61.42857142857142,30.259076599999275 74.57142857142857,36.976693923775485 87.71428571428571,40.40668537419856 100.85714285714285,39.67101368857949 114,37.721533080566644 127.14285714285714,38.62606808929054 140.28571428571428,43.828474457821315 153.42857142857142,50.82116482167194 166.57142857142858,55.45057296737595 179.7142857142857,55.735923453996534 192.85714285714286,53.69034741870993 206,53.470019093315344 219.14285714285714,57.55298838269843 232.28571428571428,64.46087321039195 245.42857142857144,70.1180771817715 258.57142857142856,71.5988741136975 271.7142857142857,69.81730719461609 284.85714285714283,68.68682189242787 298,71.5222622390786"></polyline>
+    <text x="22" y="134">día 0</text>
+    <text x="278" y="134">día 21</text>
+    <text x="2" y="22">81 h</text>
+  </svg>
+          <p class="cap">Línea discontinua: ritmo ideal. Línea sólida: trabajo restante real.</p>
+        </div>
+        <div class="card">
+          <h2 class="h2">Velocidad por sprint</h2>
+          <svg class="chart" viewBox="0 0 320 140" role="img" aria-label="Gráfico de velocidad por sprint">
+    <line class="grid" x1="22" y1="118" x2="298" y2="118"></line>
+    <rect class="bar" x="22" y="39.45454545454545" width="84" height="78.54545454545455"></rect>
+              <text x="56" y="134">S1</text>
+              <text x="56" y="35.45454545454545">18</text><rect class="bar" x="114" y="22" width="84" height="96"></rect>
+              <text x="148" y="134">S2</text>
+              <text x="148" y="18">22</text><rect class="bar" x="206" y="26.36363636363636" width="84" height="91.63636363636364"></rect>
+              <text x="240" y="134">S3</text>
+              <text x="240" y="22.36363636363636">21</text>
+  </svg>
+          <p class="cap">Horas completadas en cada sprint cerrado. Su media: 20,3 horas/sprint. </p>
+        </div>
+      </div>
+    </div></div></div>
+</section>
+
+</main>
 
 </div>
 

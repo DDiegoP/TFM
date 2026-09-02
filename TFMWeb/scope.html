@@ -9,10 +9,10 @@
 <aside class="left-panel">
     <div class="left-panel-header">
         <p class = "label"> Proyecto</p>
-        <div class = "project"> Ejemplo de Proyecto</div>
+        <div class = "project"> Descripción de Proyecto</div>
     </div>
     <nav>
-        <a class="left-panel-item" href="index.html" >Índice del TFM</a>
+        <a class="left-panel-item" href="index.html">Índice del TFM</a>
         <a class="left-panel-item" href="compromiso.html">Compromiso y carga del equipo</a>
         <a class="left-panel-item" href="estimaciones.html">Estimación Asistida</a>
         <a class="left-panel-item" href="agile.html">Seguimiento Ágil</a>
@@ -21,6 +21,212 @@
         <a class="left-panel-item" href="pipelines.html">Pipeline y plantillas</a>
     </nav>
 </aside>
+
+<main class="content-frame">
+<section class="view-frame">
+    <p class="label">Problema 4 — Gestión del scope</p>
+    <h1 class="h1">Control del scope</h1>
+    <p class="cap lede">El alcance se calcula de la siguiente forma: elementos por complejidad, dividido entre la velocidad del equipo. Cambiar cualquiera de las tres variables mueve la fecha proyectada.</p>
+
+<div class="picker"><input type="radio" name="buf" id="buf-0" class="picker-radio" checked><input type="radio" name="buf" id="buf-1" class="picker-radio"><input type="radio" name="buf" id="buf-2" class="picker-radio"><div class="picker-tabs" role="tablist"><label for="buf-0">Sin buffer</label><label for="buf-1">15 % de buffer</label><label for="buf-2">30 % de buffer</label></div><p class="cap picker-ayuda">El buffer no crea tiempo: adelanta el momento en que el desfase se hace visible.</p><div class="picker-panels"><div class="picker-panel">
+    <div class="card">
+      <h2 class="h2">Proyección</h2>
+      <div class="formula">
+        <div class="ph"><p class="label">Elementos pendientes</p><span class="stat"><span class="v">12</span></span></div>
+        <span class="op">×</span>
+        <div class="ph"><p class="label">Complejidad media</p><span class="stat"><span class="v">8 h</span></span></div>
+        <span class="op">÷</span>
+        <div class="ph"><p class="label">Velocidad observada</p><span class="stat"><span class="v">20,3 h/sem</span></span><p class="cap">media de 3 sprints</p></div>
+        <span class="op">=</span>
+        <div class="ph"><p class="label">Semanas de trabajo</p><span class="stat"><span class="v">4,7</span></span></div>
+      </div>
+      <div class="formula">
+        <div class="ph"><p class="label">Semanas de trabajo</p><span class="stat"><span class="v">4,7</span></span></div>
+        <span class="op">×</span>
+        <div class="ph"><p class="label">Margen reservado</p><span class="stat"><span class="v">×1,00</span></span><p class="cap">0 % de buffer</p></div>
+        <span class="op">=</span>
+        <div class="ph"><p class="label">Semanas hasta terminar</p><span class="stat"><span class="v">4,7</span></span></div>
+      </div>
+      <p class="cap">Sin margen reservado el factor es ×1, así que la proyección es el trabajo estimado: 4,7 semanas desde hoy llevan al 24 de mayo. Cualquier imprevisto se come directamente la fecha de entrega.</p>
+      <div class="rule"></div>
+      <div class="stats">
+        <div class="stat"><p class="label">Entrega comprometida</p><span class="h2" style="margin:0">15 de mayo</span></div>
+        <div class="stat"><p class="label">Proyección sin margen</p><span class="h2" style="margin:0">24 de mayo</span></div>
+        <div class="stat"><p class="label">Proyección con margen</p><span class="h2" style="margin:0">24 de mayo</span></div>
+        <div class="stat"><p class="label">Desfase</p><span class="h2" style="margin:0">+9 días</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 class="h2">Buffer</h2>
+      <div class="alert" style="margin-bottom:14px">
+        <span class="strong">No hay ningún margen reservado en el calendario.</span>
+        <p class="cap">Este equipo se ha desviado de media un 45 % sobre lo estimado. Sin buffer, cualquier imprevisto se convierte en retraso o en horas extra.</p>
+      </div>
+
+      
+
+      <div class="rule"></div>
+      <p class="label">Para cuadrar con el 15 de mayo se podría:</p>
+      <ul class="list-plain">
+        <li>· Recortar <span class="mono">4</span> de los 12 elementos abiertos.</li>
+        <li>· Bajar la complejidad media a <span class="mono">5,9 h</span> por elemento.</li>
+        <li>· Subir la velocidad a <span class="mono">28 h/semana</span>, son 7,7 h más del máximo que el equipo ha entregado en un sprint.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2 class="h2">Tareas que incumplen plazo · 2</h2>
+      <table class="w">
+        <thead><tr><th>Tarea</th><th>Límite</th><th>Retraso</th><th>Efecto</th><th></th></tr></thead>
+        <tbody><tr class="flag">
+            <td><span class="mono">CODE-042</span> · Ventana de input del parry</td>
+            <td class="num">12 abr</td>
+            <td class="num">9 días</td>
+            <td class="soft">En camino crítico</td>
+            <td><button class="btn sm">Aplazar 1 semana</button></td>
+          </tr><tr class="flag">
+            <td><span class="mono">ART-047</span> · Set de props del taller</td>
+            <td class="num">18 abr</td>
+            <td class="num">3 días</td>
+            <td class="soft">En camino crítico</td>
+            <td><button class="btn sm">Aplazar 1 semana</button></td>
+          </tr></tbody>
+      </table>
+    </div></div><div class="picker-panel">
+    <div class="card">
+      <h2 class="h2">Proyección</h2>
+      <div class="formula">
+        <div class="ph"><p class="label">Elementos pendientes</p><span class="stat"><span class="v">12</span></span></div>
+        <span class="op">×</span>
+        <div class="ph"><p class="label">Complejidad media</p><span class="stat"><span class="v">8 h</span></span></div>
+        <span class="op">÷</span>
+        <div class="ph"><p class="label">Velocidad observada</p><span class="stat"><span class="v">20,3 h/sem</span></span><p class="cap">media de 3 sprints</p></div>
+        <span class="op">=</span>
+        <div class="ph"><p class="label">Semanas de trabajo</p><span class="stat"><span class="v">4,7</span></span></div>
+      </div>
+      <div class="formula">
+        <div class="ph"><p class="label">Semanas de trabajo</p><span class="stat"><span class="v">4,7</span></span></div>
+        <span class="op">×</span>
+        <div class="ph"><p class="label">Margen reservado</p><span class="stat"><span class="v">×1,15</span></span><p class="cap">15 % de buffer</p></div>
+        <span class="op">=</span>
+        <div class="ph"><p class="label">Semanas hasta terminar</p><span class="stat"><span class="v">5,4</span></span></div>
+      </div>
+      <p class="cap">El trabajo son 4,7 semanas y llevaría al 24 de mayo. El 15 % de margen añade 0,7 semanas, es decir 5 días, y desplaza la proyección al 29 de mayo.</p>
+      <div class="rule"></div>
+      <div class="stats">
+        <div class="stat"><p class="label">Entrega comprometida</p><span class="h2" style="margin:0">15 de mayo</span></div>
+        <div class="stat"><p class="label">Proyección sin margen</p><span class="h2" style="margin:0">24 de mayo</span></div>
+        <div class="stat"><p class="label">Proyección con margen</p><span class="h2" style="margin:0">29 de mayo</span></div>
+        <div class="stat"><p class="label">Desfase</p><span class="h2" style="margin:0">+14 días</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 class="h2">Buffer</h2>
+      <div class="alert quiet" style="margin-bottom:14px">
+        <span class="strong">Hay un 15 % de margen reservado.</span>
+        <p class="cap">El desfase no desaparece al reservarlo: se hace visible antes, que es justo el objetivo.</p>
+      </div>
+
+      
+
+      <div class="rule"></div>
+      <p class="label">Para cuadrar con el 15 de mayo habría que:</p>
+      <ul class="list-plain">
+        <li>· Recortar <span class="mono">5</span> de los 12 elementos abiertos.</li>
+        <li>· Bajar la complejidad media a <span class="mono">5,2 h</span> por elemento.</li>
+        <li>· Subir la velocidad a <span class="mono">32 h/semana</span>, son 11,7 h más del máximo que el equipo ha entregado en un sprint.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2 class="h2">Tareas que incumplen plazo · 2</h2>
+      <table class="w">
+        <thead><tr><th>Tarea</th><th>Límite</th><th>Retraso</th><th>Efecto</th><th></th></tr></thead>
+        <tbody><tr class="flag">
+            <td><span class="mono">CODE-042</span> · Ventana de input del parry</td>
+            <td class="num">12 abr</td>
+            <td class="num">9 días</td>
+            <td class="soft">En camino crítico</td>
+            <td><button class="btn sm">Aplazar 1 semana</button></td>
+          </tr><tr class="flag">
+            <td><span class="mono">ART-047</span> · Set de props del taller</td>
+            <td class="num">18 abr</td>
+            <td class="num">3 días</td>
+            <td class="soft">En camino crítico</td>
+            <td><button class="btn sm">Aplazar 1 semana</button></td>
+          </tr></tbody>
+      </table>
+    </div></div><div class="picker-panel">
+    <div class="card">
+      <h2 class="h2">Proyección</h2>
+      <div class="formula">
+        <div class="ph"><p class="label">Elementos pendientes</p><span class="stat"><span class="v">12</span></span></div>
+        <span class="op">×</span>
+        <div class="ph"><p class="label">Complejidad media</p><span class="stat"><span class="v">8 h</span></span></div>
+        <span class="op">÷</span>
+        <div class="ph"><p class="label">Velocidad observada</p><span class="stat"><span class="v">20,3 h/sem</span></span><p class="cap">media de 3 sprints</p></div>
+        <span class="op">=</span>
+        <div class="ph"><p class="label">Semanas de trabajo</p><span class="stat"><span class="v">4,7</span></span></div>
+      </div>
+      <div class="formula">
+        <div class="ph"><p class="label">Semanas de trabajo</p><span class="stat"><span class="v">4,7</span></span></div>
+        <span class="op">×</span>
+        <div class="ph"><p class="label">Margen reservado</p><span class="stat"><span class="v">×1,30</span></span><p class="cap">30 % de buffer</p></div>
+        <span class="op">=</span>
+        <div class="ph"><p class="label">Semanas hasta terminar</p><span class="stat"><span class="v">6,1</span></span></div>
+      </div>
+      <p class="cap">El trabajo son 4,7 semanas y llevaría al 24 de mayo. El 30 % de margen añade 1,4 semanas, es decir 10 días, y desplaza la proyección al 3 de junio.</p>
+      <div class="rule"></div>
+      <div class="stats">
+        <div class="stat"><p class="label">Entrega comprometida</p><span class="h2" style="margin:0">15 de mayo</span></div>
+        <div class="stat"><p class="label">Proyección sin margen</p><span class="h2" style="margin:0">24 de mayo</span></div>
+        <div class="stat"><p class="label">Proyección con margen</p><span class="h2" style="margin:0">3 de junio</span></div>
+        <div class="stat"><p class="label">Desfase</p><span class="h2" style="margin:0">+19 días</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 class="h2">Buffer</h2>
+      <div class="alert quiet" style="margin-bottom:14px">
+        <span class="strong">Hay un 30 % de margen reservado.</span>
+        <p class="cap">El desfase no desaparece al reservarlo: se hace visible antes, que es justo el objetivo.</p>
+      </div>
+
+      
+
+      <div class="rule"></div>
+      <p class="label">Para cuadrar con el 15 de mayo habría que:</p>
+      <ul class="list-plain">
+        <li>· Recortar <span class="mono">6</span> de los 12 elementos abiertos.</li>
+        <li>· Bajar la complejidad media a <span class="mono">4,6 h</span> por elemento.</li>
+        <li>· Subir la velocidad a <span class="mono">36 h/semana</span>, son 15,7 h más del máximo que el equipo ha entregado en un sprint.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2 class="h2">Tareas que incumplen plazo · 2</h2>
+      <table class="w">
+        <thead><tr><th>Tarea</th><th>Límite</th><th>Retraso</th><th>Efecto</th><th></th></tr></thead>
+        <tbody><tr class="flag">
+            <td><span class="mono">CODE-042</span> · Ventana de input del parry</td>
+            <td class="num">12 abr</td>
+            <td class="num">9 días</td>
+            <td class="soft">En camino crítico</td>
+            <td><button class="btn sm">Aplazar 1 semana</button></td>
+          </tr><tr class="flag">
+            <td><span class="mono">ART-047</span> · Set de props del taller</td>
+            <td class="num">18 abr</td>
+            <td class="num">3 días</td>
+            <td class="soft">En camino crítico</td>
+            <td><button class="btn sm">Aplazar 1 semana</button></td>
+          </tr></tbody>
+      </table>
+    </div></div></div></div>
+</section>
+
+</main>
 
 </div>
 
